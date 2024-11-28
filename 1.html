@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        var n = prompt("请输入一列数组");
+        var a = n.split("");
+        var e = [];
+        for(var b = 0 ; b < a.length; b++) {
+            var c = false;
+            for(var d = 0; d < e.length; d++ ) {
+                if( e[d] == a[b] ) {
+                    c = true;
+                    break;
+                }
+            }
+            if(!c) {
+                e.push(a[b]);
+            }
+        }
+        console.log(e);
+    </script>
+</html>
