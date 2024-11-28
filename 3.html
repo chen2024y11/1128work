@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        var n = prompt("请输入一列数组");
+        var a = n.split("");
+        var Max = a[0];
+        var Min = a[0];
+        for (var i = 0 ; i < a.length ; i++) {
+            if(a[i] > Max) {
+                Max = a[i]; 
+            }
+            if(a[i] < Min) {
+                Min = a[i];
+            }
+        }
+        alert("数组中的最大值为" + Max);
+        alert("数组中的最小值为" + Min);
+    </script>
+</html>
