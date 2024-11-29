@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        var n = [1,2,3,4,5,6];
+        var a = prompt("再输入您想找的数");
+        var b = Number(a);
+        var c = 0;
+        for(var i = 0; i < n.length; i++ ) {
+            if( n[i] == b ) {
+            c = i;
+            break;
+            } else {
+            c = -1;
+            }
+        }
+        alert(c);
+    </script>
+</html>
